@@ -6,7 +6,7 @@ const connectDB = async () => {
   const connect = await mongoose.connect(process.env.MONGO_URI)
 
   console.log(
-    chalk.bgCyanBright.bold(`MongoDB connected: ${connect.connection.host}`)
+    chalk.cyanBright.underline(`MongoDB connected: ${connect.connection.host}`)
   )
 }
 
