@@ -9,6 +9,7 @@ export const NotFound = () => {
     setTimeout(() => {
       navigate('/')
     }, 4000)
+    // eslint-disable-next-line
   }, [])
 
   return (

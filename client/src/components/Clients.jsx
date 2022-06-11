@@ -9,7 +9,7 @@ export const Clients = () => {
   if (error) return <p>Something went wrong</p>
 
   return (
-    <>
+    <section>
       {!loading && !error && (
         <table className='table table-hover mt-3'>
           <thead>
@@ -27,6 +27,6 @@ export const Clients = () => {
           </tbody>
         </table>
       )}
-    </>
+    </section>
   )
 }
