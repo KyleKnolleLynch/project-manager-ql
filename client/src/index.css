@@ -21,8 +21,33 @@ code {
   margin-right: 1em;
 }
 
+.btn-primary,
+.bg-primary {
+  background-color: #df3ca6 !important;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #df3ca6;
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: #7430f9;
+}
+
+.btn-secondary:hover {
+  background-color: #7430f9;
+  opacity: 0.9;
+}
+
 .add-user-prompt svg {
   margin-right: 0.8em;
+}
+
+.client-info svg,
+.project-delete svg {
+  margin-right: 0.7em;
 }
 
 .feather-alert-triangle {

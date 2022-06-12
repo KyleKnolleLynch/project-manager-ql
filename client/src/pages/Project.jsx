@@ -1,19 +1,16 @@
 import { Link, useParams } from 'react-router-dom'
 import { useQuery } from '@apollo/client'
 import { GET_PROJECT } from '../queries/projectQueries'
-import { Spinner, ClientInfo } from '../components'
+import { Spinner, ClientInfo, DeleteProjectBtn } from '../components'
 
 export const Project = () => {
   const { id } = useParams()
-  const { loading, error, data } = useQuery(GET_PROJECT, {
-    variables: { id },
-  })
-  
+  const { loading, error, data } = useQuery(GET_PROJECT, { variables: { id } })
+
   if (loading) return <Spinner />
   if (error) return <p>Something went wrong</p>
 
   const { name, description, status, client } = data.project
-  console.log(data)
   return (
     <main>
       {!loading && !error && (
@@ -28,6 +25,8 @@ export const Project = () => {
           <p className='lead'>{status}</p>
 
           <ClientInfo {...client} />
+
+          <DeleteProjectBtn projectId={id} />
         </section>
       )}
     </main>

@@ -113,7 +113,7 @@ export const AddClientModal = () => {
                   />
                 </div>
                 <button
-                  className='btn btn-secondary'
+                  className='btn btn-primary'
                   type='submit'
                   data-bs-dismiss='modal'
                 >
