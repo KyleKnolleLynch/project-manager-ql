@@ -10,6 +10,8 @@
 
 Full CRUD functionality allowing users to manage projects and clients in a dashboard type environment.
 
+Big thanks and credit to Brad Traversy for creating this code/tutorial and helping me grasp GraphQL integrated with MongoDB/express.
+
 ---
 
 To test out the app:
